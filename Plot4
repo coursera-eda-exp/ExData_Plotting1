@@ -1,0 +1,13 @@
+#open household_power_consumption.txt
+
++#adjust to appropriate data range
+
++#save as household_power_consumption_020107-020207.csv 
+
++
+
++energy <- read.csv("household_power_consumption_020107-020207.csv")
+
++energy
+
++plot(energy$Global_active_power, type = "o", pch=3, cex=0.01, axes=FALSE, ann=FALSE)
