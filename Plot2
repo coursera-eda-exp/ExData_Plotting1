@@ -1,0 +1,13 @@
+#open household_power_consumption.txt
+#adjust to appropriate data range
+#save as household_power_consumption_020107-020207.csv 
+
+energy <- read.csv("household_power_consumption_020107-020207.csv")
+energy
+plot(energy$Global_active_power, type = "o", pch=3, cex=0.01, axes=FALSE, ann=FALSE)
+box()
+axis(2, las=0)
+title(ylab="Global Active Power (kilowatts)")
+axis(1, at=1, lab=c("Thu"))
+axis(1, at=1250, lab=c("Fri"))
+axis(1, at=2500, lab=c("Sat"))
