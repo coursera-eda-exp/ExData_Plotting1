@@ -1,0 +1,4 @@
+energy <- read.csv("household_power_consumption_020107-020207.csv")
+energy
+plot(energy$Global_active_power, type = "o", pch=3, cex=0.01, axes=FALSE, ann=FALSE)
+box()
